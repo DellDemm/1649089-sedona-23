@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Денис Суслов](https://up.htmlacademy.ru/adaptive/23/user/1649089).
-* Наставник: `Неизвестно`.
+* Наставник: `Михаил Кислый`(https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 

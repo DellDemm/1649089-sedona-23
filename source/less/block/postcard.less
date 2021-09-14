@@ -1,0 +1,98 @@
+.postcard__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: @color-primary;
+
+  &--highlight {
+    @media (max-width: @mobile-width-only) {
+      padding-top: 34px;
+      background-image: url("@{img-path}/advantage-triangle.svg");
+      background-repeat: no-repeat;
+      background-position: 50% top;
+      background-size: 768px 34px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.postcard__photo {
+  width: 320px;
+  height: 260px;
+  background-size: contain;
+
+  &--city {
+    background-color: #c8d2c1;
+    background-image: url("@{img-path}/photo-city.png");
+  }
+
+  &--bridge {
+    background-color: #f0bba4;
+    background-image: url("@{img-path}/photo-bridge.png");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    &--city {
+      background-image: url("@{img-path}/photo-city@2x.png");
+    }
+
+    &--bridge {
+      background-image: url("@{img-path}/photo-bridge@2x.png");
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 512px;
+    height: 256px;
+
+    &--city {
+      background-image: url("@{img-path}/photo-city-tablet.png");
+    }
+
+    &--bridge {
+      background-image: url("@{img-path}/photo-bridge-tablet.png");
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      &--city {
+        background-image: url("@{img-path}/photo-city-tablet@2x.png");
+      }
+
+      &--bridge {
+        background-image: url("@{img-path}/photo-bridge-tablet@2x.png");
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 800px;
+    height: 256px;
+
+    &--city {
+      background-image: url("@{img-path}/photo-city-desktop.png");
+    }
+
+    &--bridge {
+      background-image: url("@{img-path}/photo-bridge-desktop.png");
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      &--city {
+        background-image: url("@{img-path}/photo-city-desktop@2x.png");
+      }
+
+      &--bridge {
+        background-image: url("@{img-path}/photo-bridge-desktop@2x.png");
+      }
+    }
+  }
+}

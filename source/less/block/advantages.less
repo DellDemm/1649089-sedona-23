@@ -1,0 +1,23 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-bottom: 20px;
+  }
+
+  &--secondary {
+    background-color: @color-secondary;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 0;
+    }
+  }
+}

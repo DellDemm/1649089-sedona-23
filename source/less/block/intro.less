@@ -1,0 +1,83 @@
+.intro__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #81b4d3;
+  background-image: url("@{img-path}/intro-triangle.svg"), url("@{img-path}/back-mobile.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, center;
+  width: 100%;
+  height: 389px;
+  background-position-y: bottom, center;
+  background-size: auto, contain;
+
+  &--small {
+    height: 158px;
+    background-position-y: bottom, bottom;
+    background-size: auto, cover;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("@{img-path}/intro-triangle.svg"), url("@{img-path}/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 518px;
+    background-image: url("@{img-path}/intro-triangle.svg"), url("@{img-path}/back-desktop.jpg");
+    background-size: auto, cover;
+
+    &--small {
+      position: relative;
+      top: -4px;
+      height: 300px;
+      background-size: auto, auto;
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("@{img-path}/intro-triangle.svg"), url("@{img-path}/back-desktop@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: auto, cover;
+
+    &--small {
+      height: 311px;
+    }
+  }
+}
+
+.intro__tagline {
+  width: 282px;
+  height: 214px;
+
+  @media (max-width: @mobile-width-only) {
+    &--small {
+      position: relative;
+      top: -3px;
+      width: 229px;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    height: 350px;
+    position: relative;
+    top: -5px;
+
+    &--small {
+      position: relative;
+      top: 4px;
+      height: 290px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--small {
+      margin-right: 5px;
+    }
+  }
+}

@@ -1,0 +1,186 @@
+.text-field {
+  display: flex;
+  margin-bottom: 6px;
+
+  &--phone {
+    margin-bottom: -3px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.text-field--inline {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-field__wrapper {
+  width: 100%;
+  margin-bottom: 14px;
+
+  &--inline {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &--center {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--phone {
+    @media (min-width: @desktop-width) {
+      margin-top: 9px;
+    }
+  }
+
+  &--email {
+    @media (min-width: @desktop-width) {
+      margin-top: 9px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.text-field__title {
+  display: block;
+  margin-right: 14px;
+  margin-bottom: 9px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
+  }
+
+  &--phone {
+    margin-left: 21px;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+    }
+  }
+
+  &--email {
+    margin-left: 21px;
+    margin-right: 20px;
+  }
+
+  &--middlename {
+    margin-right: 17px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.text-field__input-wrapper {
+  display: flex;
+  width: 100%;
+
+  &--email {
+    @media (min-width: @tablet-width) {
+      margin-top: -3px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: auto;
+    }
+  }
+
+  &--firstname {
+    @media (min-width: @desktop-width) {
+      margin-top: -6px;
+    }
+  }
+}
+
+.text-field__input {
+  width: 100%;
+  height: 58px;
+  margin: 0;
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: @line-height;
+  color: @color-black;
+  text-transform: none;
+  background-color: @color-secondary-input-background;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background-color: @color-disable;
+  }
+
+  &:focus {
+    background-color: @color-white;
+    box-shadow: inset 0 0 0 4px @color-disable;
+  }
+
+  &--large {
+    height: 147px;
+    padding-top: 12px;
+    resize: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--large {
+      margin-top: 38px;
+      padding-top: 18px;
+      width: 100%;
+      height: 142px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+
+    &--mini {
+      width: 217px;
+    }
+  }
+}
+
+.text-field__icon {
+  width: 18px;
+  height: 18px;
+  padding: 20px;
+  background-color: @color-secondary-button-background;
+}
+
+.feedback__field-text {
+  &--detail {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 19px;
+    margin-bottom: 0;
+  }
+}
+
+.text-field__text {
+  display: inline-block;
+
+  &--not-for-desktop {
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+}

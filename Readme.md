@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
-* Студент: [Lev Tregubov](https://up.htmlacademy.ru/adaptive/23/user/1835941).
-* Наставник: [Сергей Максименко](https://htmlacademy.ru/profile/id248863).
+* Студент: [Денис Суслов](https://htmlacademy.ru/profile/id1649089).
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
